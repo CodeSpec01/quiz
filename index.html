@@ -1,14 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
 
-    <div class="bg-red-400 text-white">Hellow</div>
+<body>
+    <div class="h-screen w-screen hero flex items-start justify-center relative">
+        <div class="text-center md:pt-32 relative z-10">
+            <h1 class="font-bold drop-shadow-lg text-4xl md:text-7xl text-red-500">WELCOME TO THE QUIZ!</h1>
+            <p class="px-16 md:mx-30 my-4 md:my-8 text-base md:text-lg text-white font-bold">
+                Challenge your brain and test your knowledge with Quiz Hero! Explore diverse categories, from history and
+                science to pop culture and sports. Enjoy interactive quizzes, instant feedback, and track your progress.
+                Compete with friends and join a community of trivia enthusiasts. Ready to become a Quiz Hero? Start your
+                adventure now!
+            </p>
+        </div>
+    </div>
     
+
+
 </body>
+
 </html>
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body class="text-xl">
+    <div
+      class="p-6 w-full flex justify-between sm:justify-around items-center border-b-[1px] border-slate-600 backdrop-blur-md"
+    >
+      <div>
+        <img src="/public/logo.png" alt="logo" />
+      </div>
+
+      <div class="sm:flex gap-6 items-center font-semibold hidden">
+        <a href="/setup.html" class="hover:underline">
+          <div>Setup</div>
+        </a>
+        <a href="#about" class="hover:underline">
+          <div>About Us</div>
+        </a>
+        <a href="#rules" class="hover:underline">
+          <div>Rules</div>
+        </a>
+        <a href="#review" class="hover:underline">
+          <div>Reviews</div>
+        </a>
+      </div>
+
+      <div class="sm:hidden cursor-pointer" onclick="toggleHamburger(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <div class="hidden absolute top-0 left-0 text-nowrap" id="hamburger-menu">
+        <div
+          class="h-screen absolute p-10 max-w-[85vw] left-0 top-0 z-50 bg-[#242323e0] backdrop-blur-xl flex flex-col gap-20 items-center transition-all duration-500"
+        >
+          <div>
+            <img src="/public/logo.png" alt="logo" />
+          </div>
+
+          <div
+            class="flex flex-col gap-6 items-center font-semibold text-white"
+          >
+            <a href="/setup.html" class="hover:underline">
+              <div>Setup</div>
+            </a>
+            <a href="#about" class="hover:underline">
+              <div>About Us</div>
+            </a>
+            <a href="#rules" class="hover:underline">
+              <div>Rules</div>
+            </a>
+            <a href="#review" class="hover:underline">
+              <div>Reviews</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+>>>>>>> d6d315d6078c1ef7082257666d09a88634f45b6f
