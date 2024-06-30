@@ -6,11 +6,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="/src/output.css" />
     <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
   </head>
 
-  <body class="text-xl">
+  <body>
+
+    <!-- Navbar -->
     <div
-      class="p-6 w-full flex justify-between sm:justify-around items-center border-b-[1px] border-slate-600 backdrop-blur-md bg-transparent"
+      class="p-6 w-full flex justify-between sm:justify-around items-center border-b-[1px] border-slate-600 backdrop-blur-md bg-transparent z-50 fixed text-xl"
     >
       <div>
         <img src="/public/logo.png" alt="logo" />
@@ -37,9 +40,9 @@
         <div class="bar3"></div>
       </div>
 
-      <div class="hidden absolute top-0 left-0 text-nowrap" id="hamburger-menu">
+      <div class="hidden absolute top-0 left-0 text-nowrap min-w-[50vw]" id="hamburger-menu">
         <div
-          class="h-screen absolute p-10 max-w-[85vw] left-0 top-0 z-50 bg-[#242323e0] backdrop-blur-xl flex flex-col gap-20 items-center transition-all duration-500"
+          class="h-screen absolute p-10 max-w-[85vw] min-w-[50vw] left-0 top-0 z-50 bg-[#242323e0] backdrop-blur-xl flex flex-col gap-20 items-center transition-all duration-500"
         >
           <div>
             <img src="/public/logo.png" alt="logo" />
@@ -64,15 +67,18 @@
         </div>
       </div>
     </div>
+
+    <!-- Hero Section -->
     <div
-      class="h-screen w-full hero flex items-start justify-center relative"
+      class="h-screen w-full hero flex items-center justify-center relative"
     >
-      <div class="text-center md:pt-32 relative z-10">
+    <div class="absolute w-full h-screen bg-blue-500/50 -z-0"></div>
+      <div class="text-center md:pt-32 relative z-10 max-w-[1000px]">
         <h1 class="font-bold drop-shadow-lg text-4xl md:text-7xl text-red-500">
           WELCOME TO THE QUIZ!
         </h1>
         <p
-          class="px-16 md:mx-30 my-4 md:my-8 text-base md:text-lg text-white font-bold"
+          class="px-6 md:mx-30 my-4 md:my-8 text-base md:text-lg text-white font-bold w-full"
         >
           Challenge your brain and test your knowledge with Quiz Hero! Explore
           diverse categories, from history and science to pop culture and
@@ -82,6 +88,8 @@
         </p>
       </div>
     </div>
-    <div></div>
+
+    <!-- Temp section -->
+    <div class="h-screen"></div>
   </body>
 </html>

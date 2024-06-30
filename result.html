@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="result.css">
+    <script src="result.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div
+        class="p-6 w-full flex justify-between sm:justify-around items-center border-b-[1px] border-slate-600 backdrop-blur-md bg-transparent z-50 fixed text-xl">
+        <div>
+            <img src="/public/logo.png" alt="logo" />
+        </div>
+    
+        <div class="sm:flex gap-6 items-center font-semibold hidden">
+            <a href="/setup.html" class="hover:underline">
+                <div>Setup</div>
+            </a>
+            <a href="#about" class="hover:underline">
+                <div>About Us</div>
+            </a>
+            <a href="#rules" class="hover:underline">
+                <div>Rules</div>
+            </a>
+            <a href="#review" class="hover:underline">
+                <div>Reviews</div>
+            </a>
+        </div>
+    
+        <div class="sm:hidden cursor-pointer" onclick="toggleHamburger(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    
+        <div class="hidden absolute top-0 left-0 text-nowrap min-w-[50vw]" id="hamburger-menu">
+            <div
+                class="h-screen absolute p-10 max-w-[85vw] min-w-[50vw] left-0 top-0 z-50 bg-[#242323e0] backdrop-blur-xl flex flex-col gap-20 items-center transition-all duration-500">
+                <div>
+                    <img src="/public/logo.png" alt="logo" />
+                </div>
+    
+                <div class="flex flex-col gap-6 items-center font-semibold text-white">
+                    <a href="/setup.html" class="hover:underline">
+                        <div>Setup</div>
+                    </a>
+                    <a href="#about" class="hover:underline">
+                        <div>About Us</div>
+                    </a>
+                    <a href="#rules" class="hover:underline">
+                        <div>Rules</div>
+                    </a>
+                    <a href="#review" class="hover:underline">
+                        <div>Reviews</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="result" class="h-screen flex items-center justify-center text-5xl"></div>
+</body>
+</html>
