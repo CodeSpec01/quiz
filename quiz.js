@@ -82,7 +82,6 @@ const quizAlgo = async () => {
         wrapper.style.pointerEvents = "auto";
         nextQuestionBtn.style.pointerEvents = "none";
       } else {
-        alert("Quiz ended");
         window.location.href = "/result.html"
       }
 
